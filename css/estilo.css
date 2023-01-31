@@ -1,0 +1,355 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,900;1,100;1,300;1,400;1,900&display=swap");
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: black;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+/*unseteo el box-sizing que viene heredado de bootstrap*/
+* {
+  box-sizing: unset;
+}
+
+/*section index*/
+/*variables*/
+/*aplico mobile first 0-600*/
+.body-index {
+  display: grid;
+  grid-template-rows: 50px 400px auto 30px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 5px 5px 10px;
+  margin: 5px 0px 0px 0px;
+}
+header img {
+  max-height: 90px;
+  padding: 1px 1px 1px 1px;
+}
+
+.navbar {
+  padding-top: unset;
+}
+.navbar ul {
+  align-items: flex-end;
+  background-color: white;
+}
+.navbar ul li {
+  font-size: 14px;
+  font-weight: 400;
+  color: black;
+  margin-top: 5px;
+  padding: unset;
+  margin: unset;
+}
+
+.navbar > .container-fluid {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin-bottom: 2px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: radial-gradient(circle, rgb(219, 219, 219) 32%, rgb(163, 163, 163) 44%, rgb(162, 162, 162) 45%, rgb(128, 128, 128) 100%);
+  margin: 5px 0px 5px 0px;
+}
+main h1 {
+  font-size: 45px;
+  font-weight: 900;
+  line-height: 17px;
+  color: black;
+  text-align: left;
+  margin: 10px 5px 20px 10px;
+}
+main h2 {
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: normal;
+  color: black;
+  margin: 0px 0px 10px 10px;
+}
+main h3 {
+  font-size: 14px;
+  font-weight: 300;
+  font-style: italic;
+  line-height: 7px;
+  color: white;
+  margin: 0px 0px 5px 10px;
+}
+
+.fotos-index {
+  display: flex;
+  flex-wrap: wrap;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.fotos-index div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.fotos-index div img {
+  max-width: 100%;
+  height: auto;
+}
+.fotos-index div h4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 9px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: white;
+  background-color: lightgray;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  height: 20px;
+  width: 100px;
+  margin-top: unset;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+footer img {
+  max-width: 20px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+/*primer breakpoint a partir de 600px*/
+@media (min-width: 600px) {
+  .body-index {
+    display: grid;
+    grid-template-rows: 50px 400px auto 30px;
+  }
+  .fotos-index {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: nowrap;
+  }
+}
+/*segundo breakpoint a partir de 1024px*/
+@media (min-width: 1024px) {
+  .body-index {
+    display: grid;
+    grid-template-rows: 60px 300px 500px 40px;
+  }
+}
+/*aplico mobile first 0-600*/
+/*section fundamento*/
+.body-fundamento {
+  display: grid;
+  grid-template-rows: 50px 200px auto 30px;
+}
+
+.fundamento {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(231, 231, 231);
+  border-radius: 10px;
+  padding-top: 10px;
+  margin: 10px 10px 10px 10px;
+}
+.fundamento div {
+  margin: 10px;
+}
+.fundamento div p {
+  font-size: 12px;
+  font-weight: 400;
+  text-align: justify;
+  letter-spacing: normal;
+  color: black;
+  padding: 0px 10px 0px 10px;
+}
+.fundamento div img {
+  max-width: 100%;
+  height: auto;
+}
+.fundamento div h3 {
+  font-size: 12px;
+  font-weight: 300;
+  text-align: center;
+  color: black;
+  margin-top: 5px;
+}
+
+@media (min-width: 600px) {
+  .body-fundamento {
+    display: grid;
+    grid-template-rows: 50px 200px auto 30px;
+  }
+}
+@media (min-width: 1024px) {
+  .body-fundamento {
+    display: grid;
+    grid-template-rows: 60px 200px auto 40px;
+  }
+}
+/*aplico mobile first 0-600*/
+/*section informacion*/
+.body-info {
+  display: grid;
+  grid-template-rows: 50px 200px auto 30px;
+}
+
+.diagrama-tarjetas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+/*edito cards de boostrap*/
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: rgb(231, 231, 231);
+  background-clip: border-box;
+  border: unset;
+  border-radius: 10px;
+}
+
+.img-fluid {
+  vertical-align: middle;
+  border-radius: 10px;
+}
+
+.mb-5 {
+  margin-bottom: unset;
+}
+
+h5.card-title {
+  margin-bottom: 8px;
+  font-size: 18px;
+  font-weight: 900;
+  text-align: center;
+  letter-spacing: 5px;
+  color: white;
+  text-transform: uppercase;
+}
+
+p.card-text {
+  margin-bottom: 8px;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+  line-height: 15px;
+  line-break: auto;
+  color: black;
+}
+
+/*responsivo por config de cards de boostrap*/
+/*aplico mobile first 0-600*/
+/*section inspiracion*/
+.body-inspo {
+  display: grid;
+  grid-template-rows: 50px 200px auto 30px;
+}
+
+.container-fluid {
+  max-width: 100%;
+  padding: unset;
+}
+
+h4 {
+  font-size: 14px;
+  font-weight: 400;
+  color: rgb(140, 140, 140);
+  margin-top: 5px;
+  text-align: center;
+}
+
+.carrusel-texto {
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+  color: black;
+}
+
+@media (min-width: 600px) {
+  .body-inspo {
+    display: grid;
+    grid-template-rows: 50px 200px auto 30px;
+  }
+}
+@media (min-width: 1024px) {
+  .body-inspo {
+    display: grid;
+    grid-template-rows: 60px 200px auto 40px;
+  }
+}
+/*aplico mobile first 0-600*/
+/*section agenda*/
+.body-agenda {
+  display: grid;
+  grid-template-rows: 50px 110px auto 50px;
+  background-color: unset;
+}
+
+.agenda {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-row-gap: 15px;
+  margin: 10px 10px 10px 10px;
+}
+
+.evento {
+  color: black;
+  background-color: rgb(231, 231, 231);
+  text-align: center;
+  line-height: 18px;
+  padding: 10px 10px 10px 10px;
+  margin: 0px 5px 0px 5px;
+  border-radius: 10px;
+}
+
+@media (min-width: 600px) {
+  .body-agenda {
+    display: grid;
+    grid-template-rows: 50px 200px 550px 30px;
+  }
+  .agenda {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-bottom: 30px;
+  }
+  .evento {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
+@media (min-width: 1024px) {
+  .body-agenda {
+    display: grid;
+    grid-template-rows: 60px 200px 550px 40px;
+  }
+}/*# sourceMappingURL=estilo.css.map */

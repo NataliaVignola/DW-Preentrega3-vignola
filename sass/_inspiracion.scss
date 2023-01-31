@@ -1,0 +1,42 @@
+/*aplico mobile first 0-600*/
+
+/*section inspiracion*/
+.body-inspo{
+    display: grid;
+    grid-template-rows: 50px 200px auto 30px;
+}
+
+.container-fluid{
+    max-width: 100%;
+    padding: unset;
+}
+
+h4{
+    font-size: 14px;
+    font-weight: 400;
+    color: rgb(140, 140, 140);
+    margin-top: 5px;
+    text-align: center;
+}
+
+.carrusel-texto{
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    color: black;
+}
+
+@media (min-width:600px){
+    .body-inspo{
+        display: grid;
+        grid-template-rows: 50px 200px auto 30px;
+    }
+}
+
+@media (min-width:1024px){
+    .body-inspo{
+        display: grid;
+        grid-template-rows: 60px 200px auto 40px;
+    }
+    
+}

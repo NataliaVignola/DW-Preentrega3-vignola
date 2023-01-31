@@ -1,0 +1,66 @@
+/*aplico mobile first 0-600*/
+
+/*section informacion*/
+.body-info{
+    display: grid;
+    grid-template-rows: 50px 200px auto 30px;
+}
+
+.diagrama-tarjetas{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+/*edito cards de boostrap*/
+.card{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: rgb(231, 231, 231);
+    background-clip: border-box;
+    border: unset;
+    border-radius: 10px;
+}
+
+.img-fluid{
+    vertical-align: middle;
+    border-radius: 10px;
+}
+
+.mb-5{
+    margin-bottom: unset;
+}
+
+h5.card-title{
+    margin-bottom: 8px;
+    font-size: 18px;
+    font-weight: 900;
+    text-align: center;
+    letter-spacing: 5px;
+    color: white;
+    text-transform: uppercase;
+}
+
+p.card-text{
+    margin-bottom: 8px;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 15px;
+    line-break: auto;
+    color: black;
+}
+
+/*responsivo por config de cards de boostrap*/
+
+@media (min-width:600px){
+
+}
+
+@media (min-width:1024px){
+
+}
