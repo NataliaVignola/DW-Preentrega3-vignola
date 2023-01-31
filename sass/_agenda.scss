@@ -9,7 +9,7 @@ background-color: $background-color;
 /*section agenda*/
 .body-agenda{
     display: grid;
-    grid-template-rows: 50px 110px auto 50px;
+    grid-template-rows: 50px 110px auto 40px;
     background-color: unset;
 }
 
@@ -34,7 +34,7 @@ background-color: $background-color;
 
     .body-agenda{
         display: grid;
-        grid-template-rows: 50px 200px 550px 30px;
+        grid-template-rows: 50px 200px 550px 40px;
     }
 
     .agenda {

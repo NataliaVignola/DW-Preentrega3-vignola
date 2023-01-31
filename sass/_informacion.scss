@@ -3,7 +3,7 @@
 /*section informacion*/
 .body-info{
     display: grid;
-    grid-template-rows: 50px 200px auto 30px;
+    grid-template-rows: 50px 200px auto 40px;
 }
 
 .diagrama-tarjetas{
@@ -58,9 +58,16 @@ p.card-text{
 /*responsivo por config de cards de boostrap*/
 
 @media (min-width:600px){
-
+    .body.body-info{
+        display: grid;
+        grid-template-rows: 50px 200px auto 40px;
+    }
 }
 
 @media (min-width:1024px){
-
+    .body-info{
+        display: grid;
+        grid-template-rows: 60px 200px auto 40px;
+    }
+    
 }

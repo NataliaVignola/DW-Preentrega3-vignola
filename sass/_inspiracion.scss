@@ -3,7 +3,7 @@
 /*section inspiracion*/
 .body-inspo{
     display: grid;
-    grid-template-rows: 50px 200px auto 30px;
+    grid-template-rows: 50px 200px auto 40px;
 }
 
 .container-fluid{
@@ -29,7 +29,7 @@ h4{
 @media (min-width:600px){
     .body-inspo{
         display: grid;
-        grid-template-rows: 50px 200px auto 30px;
+        grid-template-rows: 50px 200px auto 40px;
     }
 }
 
